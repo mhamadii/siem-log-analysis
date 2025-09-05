@@ -1,5 +1,4 @@
 # SIEM Log Analysis – Brute Force & Phishing Detection
-# SIEM Log Analysis – Brute Force & Phishing Detection
 
 ## 📌 Project Overview
 This project demonstrates how to analyze **security logs** to detect brute force and phishing attacks using a **Security Information and Event Management (SIEM)** tool (e.g., Splunk/Elastic).
