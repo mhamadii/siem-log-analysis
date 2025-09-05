@@ -1,2 +1,2 @@
-# siem-log-analysis
-Brute force &amp; phishing detection using SIEM (Splunk/Elastic)
+# SIEM Log Analysis – Brute Force & Phishing Detection
+
