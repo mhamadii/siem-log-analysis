@@ -1,0 +1,53 @@
+timestamp,recipient,sender,sender_domain,subject,spf,dkim,dmarc,url_count,attachment_type,spam_score,verdict
+2025-09-26T09:18:18,sales@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,0,pdf,6,clean
+2025-09-26T09:23:18,payroll@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,0,none,6,clean
+2025-09-26T09:28:18,payroll@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,1,none,18,clean
+2025-09-26T09:28:18,sales@corp.local,dhl-delivery <tracking@dhl-support.cc>,dhl-support.cc,URGENT: Unpaid invoice attached,softfail,fail,fail,1,zip,88,phish
+2025-09-26T09:33:18,payroll@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,1,none,6,clean
+2025-09-26T09:36:18,payroll@corp.local,payroll-team <payroll@corp-payroll.com>,corp-payroll.com,URGENT: Unpaid invoice attached,softfail,fail,fail,1,zip,88,phish
+2025-09-26T09:38:18,it@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,1,none,18,clean
+2025-09-26T09:43:18,it@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,0,pdf,13,clean
+2025-09-26T09:44:18,analyst@corp.local,payroll-team <payroll@corp-payroll.com>,corp-payroll.com,Payroll update: confirm bank details,fail,fail,fail,2,xlsm,90,phish
+2025-09-26T09:48:18,analyst@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,1,pdf,12,clean
+2025-09-26T09:52:18,it@corp.local,payroll-team <payroll@corp-payroll.com>,corp-payroll.com,Delivery Issue: Schedule your package,fail,none,fail,2,none,81,phish
+2025-09-26T09:53:18,analyst@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,0,pdf,13,clean
+2025-09-26T09:58:18,it@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,1,none,6,clean
+2025-09-26T10:00:18,payroll@corp.local,payroll-team <payroll@corp-payroll.com>,corp-payroll.com,Delivery Issue: Schedule your package,fail,none,fail,2,none,81,phish
+2025-09-26T10:03:18,payroll@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,0,pdf,12,clean
+2025-09-26T10:08:18,payroll@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,0,pdf,8,clean
+2025-09-26T10:08:18,sales@corp.local,ms-support <support@microsoft-security.com>,microsoft-security.com,Payroll update: confirm bank details,fail,fail,fail,2,xlsm,90,phish
+2025-09-26T10:13:18,sales@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,0,pdf,6,clean
+2025-09-26T10:16:18,it@corp.local,payroll-team <payroll@corp-payroll.com>,corp-payroll.com,Delivery Issue: Schedule your package,fail,none,fail,2,none,81,phish
+2025-09-26T10:18:18,payroll@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,0,none,7,clean
+2025-09-26T10:23:18,sales@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,1,pdf,13,clean
+2025-09-26T10:24:18,analyst@corp.local,dhl-delivery <tracking@dhl-support.cc>,dhl-support.cc,Delivery Issue: Schedule your package,fail,none,fail,2,none,81,phish
+2025-09-26T10:28:18,analyst@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,0,none,11,clean
+2025-09-26T10:32:18,analyst@corp.local,payroll-team <payroll@corp-payroll.com>,corp-payroll.com,Payroll update: confirm bank details,fail,fail,fail,2,xlsm,90,phish
+2025-09-26T10:33:18,analyst@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,1,none,10,clean
+2025-09-26T10:38:18,it@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,1,none,16,clean
+2025-09-26T10:40:18,sales@corp.local,dhl-delivery <tracking@dhl-support.cc>,dhl-support.cc,Delivery Issue: Schedule your package,fail,none,fail,2,none,81,phish
+2025-09-26T10:43:18,it@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,1,none,6,clean
+2025-09-26T10:48:18,it@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,1,pdf,5,clean
+2025-09-26T10:48:18,analyst@corp.local,dhl-delivery <tracking@dhl-support.cc>,dhl-support.cc,URGENT: Unpaid invoice attached,softfail,fail,fail,1,zip,88,phish
+2025-09-26T10:53:18,it@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,1,none,17,clean
+2025-09-26T10:56:18,sales@corp.local,dhl-delivery <tracking@dhl-support.cc>,dhl-support.cc,URGENT: Unpaid invoice attached,softfail,fail,fail,1,zip,88,phish
+2025-09-26T10:58:18,analyst@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,0,none,14,clean
+2025-09-26T11:03:18,it@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,0,pdf,13,clean
+2025-09-26T11:08:18,sales@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,0,none,10,clean
+2025-09-26T11:13:18,payroll@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,1,none,17,clean
+2025-09-26T11:18:18,payroll@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,0,pdf,6,clean
+2025-09-26T11:23:18,sales@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,1,none,14,clean
+2025-09-26T11:28:18,analyst@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,1,none,10,clean
+2025-09-26T11:33:18,it@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,1,pdf,13,clean
+2025-09-26T11:38:18,payroll@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,1,none,0,clean
+2025-09-26T11:43:18,analyst@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,1,none,11,clean
+2025-09-26T11:48:18,payroll@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,0,none,3,clean
+2025-09-26T11:53:18,payroll@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,1,none,4,clean
+2025-09-26T11:58:18,sales@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,0,pdf,20,clean
+2025-09-26T12:03:18,sales@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,0,pdf,4,clean
+2025-09-26T12:08:18,analyst@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,0,pdf,2,clean
+2025-09-26T12:13:18,it@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,0,none,20,clean
+2025-09-26T12:18:18,it@corp.local,no-reply@corp.local,corp.local,Team Update,pass,pass,pass,0,none,1,clean
+2025-09-26T12:23:18,sales@corp.local,no-reply@corp.local,corp.local,Invoice Received,pass,pass,pass,1,pdf,13,clean
+2025-09-26T12:28:18,analyst@corp.local,no-reply@corp.local,corp.local,Weekly Newsletter,pass,pass,pass,1,none,18,clean
+2025-09-26T12:33:18,it@corp.local,no-reply@corp.local,corp.local,Welcome,pass,pass,pass,0,none,16,clean

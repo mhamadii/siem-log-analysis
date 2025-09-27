@@ -1,0 +1,1 @@
+event.dataset: "linux.auth" and (message: "Failed password" or message: "Accepted password")

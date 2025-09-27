@@ -1,0 +1,4 @@
+index=email_logs
+| where spam_score>=80 OR (spf="fail" AND dmarc="fail")
+| table _time sender sender_domain recipient subject spam_score spf dkim dmarc url_count attachment_type verdict
+| sort -_time

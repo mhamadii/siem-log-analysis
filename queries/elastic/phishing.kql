@@ -1,0 +1,6 @@
+index: email-logs-* and (
+  email.spam_score >= 80 or
+  (email.spf: "fail" and email.dmarc: "fail") or
+  email.url_count >= 3 or
+  email.attachment.extension: (exe or js or scr or zip or xlsm)
+)
