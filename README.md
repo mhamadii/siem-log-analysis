@@ -1,38 +1,98 @@
-
 # SIEM Log Analysis — Brute Force & Phishing
 
-Detect brute-force SSH logins and suspicious phishing emails using Splunk/Elastic. Includes sample logs, queries, dashboard guidance, and a mini triage playbook.
+This project demonstrates how to detect **brute-force SSH login attempts** and **suspicious phishing emails** using **Splunk**.  
+It includes sample log data, custom queries, visualizations, and a lightweight triage playbook.  
+The goal is to showcase **SIEM log analysis, threat detection, and investigation skills** for a real-world scenario.  
+
+---
 
 ## Files
-- data/linux_ssh_logins.csv
-- data/email_gateway.csv
-- queries/splunk/ssh_bruteforce.spl
-- queries/splunk/phishing.spl
-- queries/elastic/ssh_bruteforce.kql
-- queries/elastic/phishing.kql
-- docs/triage-playbook.md
-- docs/screenshots/ (add your images here)
+- **data/**
+  - `linux_ssh_logins.csv` — Sample SSH login attempts log
+  - `email_gateway.csv` — Sample email gateway log
+- **queries/**
+  - `splunk/ssh_bruteforce.spl` — Brute-force detection (Splunk SPL)
+  - `splunk/phishing.spl` — Phishing detection (Splunk SPL)
+  - `elastic/ssh_bruteforce.kql` — Brute-force detection (Elastic KQL)
+  - `elastic/phishing.kql` — Phishing detection (Elastic KQL)
+- **docs/**
+  - `triage-playbook.md` — Step-by-step triage guidance
+  - `screenshots/` — Search queries and detections in Splunk
 
-## Quick run
-1) Upload both CSVs into Splunk (Add Data → Upload).  
-2) Run the two searches (SSH + phishing).  
-3) Build a simple dashboard (top IPs, timechart failures/successes, suspicious emails table).  
-4) Save 2–3 screenshots to docs/screenshots and commit.
+---
+
+## Quick Run
+
+1. **Upload logs into Splunk**
+   - Go to *Add Data → Upload*  
+   - Upload both CSVs (`linux_ssh_logins.csv`, `email_gateway.csv`)
+
+2. **Run the saved searches**
+   - Brute force detection (SSH)  
+   - Phishing detection (suspicious emails)
+
+3. **Visualize the data**
+   - Build dashboards:  
+     - Top IPs  
+     - Timechart of login failures/successes  
+     - Suspicious email tables
+
+4. **Review detections**
+   - Use the queries provided  
+   - Correlate events with DMARC/DKIM, spam score, suspicious attachments, and subject line patterns  
+
+---
 
 ## Screenshots
 
 ### Brute Force Detection
 ![Brute Force](docs/screenshots/BruteForce.png)
 
-### Phishing Detection - Auth Checks (DMARC/DKIM)
+### Phishing Detection — Auth Checks (DMARC/DKIM)
 ![Phishing Auth Checks](docs/screenshots/Phishing_AuthChecks_DMARC_DKIM.png)
 
-### Phishing Detection - High Spam Score
-![Phishing High Spam Score 1](docs/screenshots/Phishing_High_SpamScorePT1.png)
+### Phishing Detection — High Spam Score
+![Phishing High Spam Score 1](docs/screenshots/Phishing_High_SpamScorePT1.png)  
 ![Phishing High Spam Score 2](docs/screenshots/Phishing_High_SpamScorePT2.png)
 
-### Phishing Detection - Suspicious Subjects
+### Phishing Detection — Suspicious Subjects
 ![Phishing Suspicious Subjects](docs/screenshots/Phishing_SuspiciousSubjects.png)
 
-### Phishing Detection - Suspicious Attachments
+### Phishing Detection — Suspicious Attachments
 ![Suspicious Attachments](docs/screenshots/Suspicious_Attachments.png)
+
+---
+
+## Triage Playbook (Quick Guide)
+
+- **Step 1: Brute Force**
+  - Investigate source IPs with multiple failed logins  
+  - Check if any attempt succeeded after many failures  
+  - Correlate with threat intel feeds
+
+- **Step 2: Phishing**
+  - Identify emails failing DMARC/DKIM checks  
+  - Flag high spam scores (>7) for manual review  
+  - Investigate suspicious subjects (e.g., “URGENT”, “Password”)  
+  - Check for dangerous attachments (`.exe`, `.zip`, `.scr`, `.bat`)
+
+- **Step 3: Escalation**
+  - Escalate confirmed malicious events to SOC team  
+  - Recommend blocking sender domain / quarantining attachments  
+
+---
+
+## Skills Demonstrated
+- Splunk SPL & Elastic KQL queries  
+- SIEM log ingestion & analysis  
+- Detection engineering (brute force, phishing)  
+- Dashboard building for SOC visibility  
+- Writing triage playbooks for incident response  
+
+---
+
+## Author
+**Mohammed Hamadi**  
+- Google Cybersecurity Professional Certificate | CompTIA Security+ | CS50 Cybersecurity  
+- 📂 [GitHub Portfolio](https://github.com/mhamadii)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/mohammedhamadi/)  
