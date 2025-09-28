@@ -46,7 +46,7 @@ The goal is to showcase **SIEM log analysis, threat detection, and investigation
 ## Screenshots
 
 ### Brute Force Detection
-![BruteForce](docs/screenshots/BruteForce.png)
+![Brute Force](docs/screenshots/BruteForce.png)
 
 ### Phishing Detection — Auth Checks (DMARC/DKIM)
 ![Phishing Auth Checks](docs/screenshots/Phishing_AuthChecks_DMARC_DKIM.png)
