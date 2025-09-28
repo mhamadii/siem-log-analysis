@@ -94,10 +94,3 @@ The goal is to showcase **SIEM log analysis, threat detection, and investigation
 - Writing triage playbooks for incident response  
 
 ---
-
-## Author  
-**Mohammed Hamadi**  
-
-- Google Cybersecurity Professional Certificate | CompTIA Security+ | CS50 Cybersecurity  
-- [📂 GitHub Portfolio](https://github.com/mhamadii)  
-- [🔗 LinkedIn](https://www.linkedin.com/in/mohammedhamadi)  
